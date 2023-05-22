@@ -1,3 +1,3 @@
 ### meerkats-are-cool
 
-## React app to learn some tricks
+## React app to learn some fancy tricks
