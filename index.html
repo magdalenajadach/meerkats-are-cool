@@ -7,7 +7,36 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/jsx">
       const app = document.getElementById('app');
-      ReactDOM.render(<h1>Hello world 🚀</h1>, app);
+
+      function Header({ title }) {
+        const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+        function handleClick() {
+          console.log("increment like count")
+        }
+
+        return <div><h1>{title ? title : 'Ship it 🚀'}</h1>
+          <div>
+            {names.map((name) => (
+              <p key={name}>{name}</p>
+            ))}
+          </div>
+          <button onClick={handleClick}>Like</button>
+        </div>;
+
+      }
+
+      function HomePage() {
+
+
+        return (
+          <div>
+            <Header title={title} />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<Header />, app);
     </script>
   </body>
 </html>
