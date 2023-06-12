@@ -1,15 +1,15 @@
-export const Card = ({ pathways }) => {
+export const Card = ({ meerkats }) => {
   return (
     <div className="">
-      {pathways.map((pathway) => {
-        return (<div>
-          <h2>{pathway.title}</h2>
-          <p>{pathway.description}</p>
-          <img alt="meerkat" src={pathway.image} />
-        </div>)
-        
+      {meerkats.map((meerkat) => {
+        return (
+          <div>
+            <h2>{meerkat.title}</h2>
+            <p>{meerkat.description}</p>
+            <img alt="meerkat" src={meerkat.image} />
+          </div>
+        );
       })}
     </div>
   );
 };
-

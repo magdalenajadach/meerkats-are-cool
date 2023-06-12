@@ -1,23 +1,20 @@
 import { useState } from "react";
 import { Header } from "./components/Header/Header";
 import { List } from "./components/Lessons/LessonList";
+import { LessonUseRefs } from "./components/Lessons/LessonUseRefs";
+import { LessonUseState } from "./components/Lessons/LessonUseState";
 import Meerkats from "./config/meerkats.json";
 import { Card } from "./components/Card/Card";
 
 export default function HomePage() {
-  const [likes, setLikes] = useState(0);
-
-  function handleClick() {
-    setLikes(likes + 1);
-  }
-
   return (
     <div>
+      <LessonUseRefs />
+      <LessonUseState />
       <Header title="Meekats are cool" />
       <List />
-      <Card pathways={Meerkats.pathways} />
-
-      <button onClick={handleClick}>Like ({likes})</button>
+      <div className="card-wrapper"></div>
+      <Card meerkats={Meerkats.meerkats} />
     </div>
   );
 }
