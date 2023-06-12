@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "./components/Header/Header";
 import { List } from "./components/Lessons/LessonList";
+import Meerkats from './config/meerkats.json'
 
 export default function HomePage() {
   const [likes, setLikes] = useState(0);
