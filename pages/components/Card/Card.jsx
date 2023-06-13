@@ -1,4 +1,4 @@
-export const Card = ({ meerkats }) => {
+export default function Card ({ meerkats }) {
   return (
     <div className="">
       {meerkats.map((meerkat) => {

@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 
-export function LessonUseRefs() {
+export default function LessonUseRefs() {
   const ref = useRef(0);
 
   function handleClick() {

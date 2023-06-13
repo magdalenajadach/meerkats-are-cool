@@ -1,4 +1,4 @@
-export function List() {
+export default function List() {
   const meerkats = ["Ada Lovelace meerkat", "Grace Hopper meerkat", "Margaret Hamilton meerkat"];
 
   return (

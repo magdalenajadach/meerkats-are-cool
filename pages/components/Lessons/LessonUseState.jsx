@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function LessonUseState() {
+export default function LessonUseState() {
   const [clicks, setClicks] = useState(0);
 
   function handleClick() {
