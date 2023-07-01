@@ -1,4 +1,4 @@
-export default function Card ({ meerkats }) {
+export default function Card({ meerkats }) {
   return (
     <div className="">
       {meerkats.map((meerkat) => {
@@ -12,4 +12,4 @@ export default function Card ({ meerkats }) {
       })}
     </div>
   );
-};
+}
