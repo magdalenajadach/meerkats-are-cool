@@ -4,8 +4,8 @@ import LessonUseRefs from "./components/Lessons/LessonUseRefs";
 import LessonUseState from "./components/Lessons/LessonUseState";
 import { meerkats } from "./config/meerkats";
 import Card from "./components/Card/Card";
-import Stopwatch from "./components/Lessons/Stopwatch"
 import Toggle from "./components/Lessons/Toggle";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -13,8 +13,9 @@ export default function HomePage() {
       <LessonUseRefs />
       <LessonUseState />
       <Header title="Meekats are cool" />
-      <Stopwatch />
+      <Link href="/about">Link to a new page</Link>
       <Toggle />
+      <Link href="/Stopwatch">Stopwatch link</Link>
       <List />
       <div className="card-wrapper"></div>
       <Card meerkats={meerkats} />
